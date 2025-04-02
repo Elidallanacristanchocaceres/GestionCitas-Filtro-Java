@@ -62,7 +62,6 @@ public class HistorialRepositoryImpl implements HistorialRepository {
     }
 
     private Paciente obtenerPaciente(Long pacienteId) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'obtenerPaciente'");
     }
 
@@ -89,13 +88,11 @@ public class HistorialRepositoryImpl implements HistorialRepository {
 
     @Override
     public boolean agregarRegistro(Long pacienteId, String observaciones, String tratamiento) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'agregarRegistro'");
     }
 
     @Override
     public String generarReportePdf(Long pacienteId) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'generarReportePdf'");
     }
 }

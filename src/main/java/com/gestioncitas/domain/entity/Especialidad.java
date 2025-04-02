@@ -24,7 +24,6 @@ public class Especialidad {
     public String getNombre() { return nombre; }
     public String getDescripcion() { return descripcion; }
 
-    // Método añadido para solucionar el error
     public void setId(Long id) {
         this.id = id;
     }

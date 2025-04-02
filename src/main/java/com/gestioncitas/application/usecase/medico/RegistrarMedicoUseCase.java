@@ -17,11 +17,9 @@ public class RegistrarMedicoUseCase {
 
     public Medico ejecutar(String nombre, String apellido, Long especialidadId,
                          LocalTime horarioInicio, LocalTime horarioFin) {
-        // Validar especialidad
         var especialidad = especialidadRepository.buscarPorId(especialidadId)
             .orElseThrow(() -> new IllegalArgumentException("Especialidad no válida"));
 
-        // Validar horario
         if (horarioInicio.isAfter(horarioFin)) {
             throw new IllegalArgumentException("El horario de inicio debe ser antes del fin");
         }

@@ -49,7 +49,6 @@ public class Historial {
     }
 
     public void setId(long long1) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'setId'");
     }
 }

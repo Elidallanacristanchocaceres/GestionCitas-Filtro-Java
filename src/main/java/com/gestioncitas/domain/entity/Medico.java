@@ -11,7 +11,6 @@ public class Medico {
     private LocalTime horarioInicio;
     private LocalTime horarioFin;
 
-    // Constructor
     public Medico(Long id, String nombre, String apellido, Especialidad especialidad, 
                  LocalTime horarioInicio, LocalTime horarioFin) {
         this.id = id;

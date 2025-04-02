@@ -197,7 +197,6 @@ public class CitaRepositoryImpl implements CitaRepository {
 
     @Override
     public boolean existeCitaEnHorario(Medico medico, LocalDateTime nuevaFechaHora) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'existeCitaEnHorario'");
     }
 }

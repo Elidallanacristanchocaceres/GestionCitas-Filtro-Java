@@ -23,7 +23,6 @@ public class Paciente {
         this.email = email;
     }
 
-    // Getters
     public Long getId() { return id; }
     public String getNombre() { return nombre; }
     public String getApellido() { return apellido; }
@@ -32,7 +31,6 @@ public class Paciente {
     public String getTelefono() { return telefono; }
     public String getEmail() { return email; }
 
-    // Setters
     public void setId(Long id) { this.id = id; }
     public void setNombre(String nombre) { this.nombre = Objects.requireNonNull(nombre); }
     public void setApellido(String apellido) { this.apellido = Objects.requireNonNull(apellido); }

@@ -26,7 +26,7 @@ public class MenuCitas {
             System.out.print("Seleccione una opción: ");
             
             opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            scanner.nextLine(); 
 
             switch (opcion) {
                 case 1:
@@ -56,8 +56,7 @@ public class MenuCitas {
         System.out.print("ID del médico: ");
         Long medicoId = scanner.nextLong();
         
-        scanner.nextLine(); // Limpiar buffer
-        
+        scanner.nextLine(); 
         System.out.print("Fecha y hora (yyyy-MM-dd HH:mm): ");
         String fechaHoraStr = scanner.nextLine();
         
@@ -74,7 +73,7 @@ public class MenuCitas {
         System.out.println("\n--- CANCELAR CITA ---");
         System.out.print("Ingrese el ID de la cita a cancelar: ");
         Long citaId = scanner.nextLong();
-        scanner.nextLine(); // Limpiar buffer
+        scanner.nextLine(); 
         
         System.out.println("Funcionalidad de cancelación en desarrollo...");
     }
@@ -83,7 +82,7 @@ public class MenuCitas {
         System.out.println("\n--- CITAS POR PACIENTE ---");
         System.out.print("Ingrese ID del paciente: ");
         Long pacienteId = scanner.nextLong();
-        scanner.nextLine(); // Limpiar buffer
+        scanner.nextLine(); 
         
         System.out.println("Funcionalidad de consulta en desarrollo...");
     }

@@ -29,14 +29,12 @@ public class MedicoRepositoryImpl implements MedicoRepository {
         try (PreparedStatement stmt = connection.prepareStatement(sql, 
              esNuevo ? Statement.RETURN_GENERATED_KEYS : Statement.NO_GENERATED_KEYS)) {
             
-            // Establecer parámetros comunes
             stmt.setString(1, medico.getNombre());
             stmt.setString(2, medico.getApellido());
             stmt.setLong(3, medico.getEspecialidad().getId());
             stmt.setTime(4, Time.valueOf(medico.getHorarioInicio()));
             stmt.setTime(5, Time.valueOf(medico.getHorarioFin()));
 
-            // Si es actualización, establecer el ID
             if (!esNuevo) {
                 stmt.setLong(6, medico.getId());
             }
@@ -46,7 +44,6 @@ public class MedicoRepositoryImpl implements MedicoRepository {
                 throw new SQLException("No se pudo guardar el médico, ninguna fila afectada");
             }
 
-            // Si es nuevo, obtener el ID generado
             if (esNuevo) {
                 try (ResultSet generatedKeys = stmt.getGeneratedKeys()) {
                     if (generatedKeys.next()) {
